@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>XActivate Reference</title>
+		<meta name="AppleTitle" content="XActivate Reference" />
+
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link href="assets/default.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
+		<meta name="keywords" content="XActivate, AppleScript" />
+		<script type="text/javascript" src="assets-helpbook/run_helpscript.js"></script>
+		<script type="text/javascript" src="assets/navibar-jump.js"></script>
+        <link id="helpviewer-handler-helper" href="assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="assets-helpbook/helpviewer-handler-enable.js"></script>
+        <link href="./" id="HelpBookRoot" />
+	</head>
+
+	<body>
+		<div id="navi-bar">
+			<div class="edit-script-link">
+				<a onclick="return runHelpScriptWithBundleRoot(this)" href="assets-helpbook/editScript.scpt">Edit Script</a>
+			</div>
+			<div class="left-contents">
+			<div class="to-root">
+				<!-- InstanceBeginEditable name="to-root" --><!-- InstanceEndEditable -->
+			</div>
+			<select onchange="navibarJump(this)">
+<option value="">
+§
+</option>
+<option value="#Synopsis">
+Synopsis
+</option>
+<option value="#Example">
+Example
+</option>
+<option value="#Handlers">
+Handlers
+</option>
+<option value="#do">
+- do
+</option>
+<option value="#hide">
+- hide
+</option>
+</select>
+			</div>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+		<div id="contents">
+		<h1>XActivate Reference</h1>
+<ul>
+<li>Version : 1.0</li>
+<li>Author : Tetsuro KURITA <a href="mailto:scriptfactory@mac.com">scriptfactory@mac.com</a></li>
+<li><a href="http://www.script-factory.net/XModules/XActivate/en/index.html">Home page</a> || <a href="http://www.script-factory.net/XModules/XActivate/changelog.html">ChangeLog</a> || <a href="https://github.com/tkurita/XActivate">Repository</a></li>
+</ul>
+<h2 id="Synopsis">Synopsis</h2>
+<p>XActivate is an AppleScript library to activate an application process using the specified options.This library allow you to brings only the main and key windows forward. </p>
+<p>Also this library allow you to hide a specified application process.</p>
+<h2 id="Example">Example</h2>
+<div class="sourceCode">
+<div class="scriptButton">
+    <input type="button" value="Open this script" onclick="document.location = this.src" src="applescript://com.apple.scripteditor?action=new&amp;script=use%20XActivate%20:%20script%20%22XActivate%22%0D%0Dtell%20XActivate%0D%09--%20default%20behavior%20is%20bringing%20one%20window%20to%20forntmost.%0D%09do(%22com.apple.Safari%22)%0D%09%0D%09--%20bringing%20all%20windows%20to%20frontmost%20by%20specifing%20%22all_windows%22%20parameter.%0D%09do(%7Bid:%22com.apple.finder%22,%20all_windows:true%7D)%0Dend%20tell" />
+</div><div>
+<span class="langKeyword">use</span> <span class="userDefine">XActivate</span><span class="normal"> : </span><span class="className">script</span><span class="normal"> &quot;XActivate&quot;</span>
+</div>
+<br />
+<div>
+<span class="langKeyword">tell</span> <span class="userDefine">XActivate</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="comment">-- default behavior is bringing one window to forntmost.</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="userDefine">do</span><span class="normal">(&quot;com.apple.Safari&quot;)</span>
+</div>
+<br />
+<div style="text-indent:4ex;">
+<span class="comment">-- bringing all windows to frontmost by specifing &quot;all_windows&quot; parameter.</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="userDefine">do</span><span class="normal">({</span><span class="propertyName">id</span><span class="normal">:&quot;com.apple.finder&quot;, </span><span class="userDefine">all_windows</span><span class="normal">:</span><span class="enumeratedValues">true</span><span class="normal">})</span>
+</div>
+<div>
+<span class="langKeyword">end</span> <span class="langKeyword">tell</span>
+</div>
+</div>
+<h2 id="Handlers">Handlers</h2>
+
+<h3 id="do"><a href="pages/do.html">do</a></h3>
+<p>Bring a specified application to the front.</p>
+<h3 id="hide"><a href="pages/hide.html">hide</a></h3>
+<p>Hide a specified application.The target application should not be activated.</p>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+	</body>
+
+</html>
