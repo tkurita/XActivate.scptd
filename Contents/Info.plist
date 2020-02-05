@@ -13,9 +13,9 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.1</string>
+	<string>2</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright 2018-2019, Kurita Tetsuro</string>
+	<string>Copyright 2018-2020, Kurita Tetsuro</string>
 	<key>OSAAppleScriptObjCEnabled</key>
 	<true/>
 	<key>WindowState</key>
@@ -25,7 +25,7 @@
 		<key>bundlePositionOfDivider</key>
 		<real>613</real>
 		<key>dividerCollapsed</key>
-		<true/>
+		<false/>
 		<key>eventLogLevel</key>
 		<integer>2</integer>
 		<key>name</key>
@@ -33,7 +33,7 @@
 		<key>positionOfDivider</key>
 		<real>333</real>
 		<key>savedFrame</key>
-		<string>529 147 912 676 0 0 1440 877 </string>
+		<string>528 147 912 676 0 0 1440 877 </string>
 		<key>selectedTab</key>
 		<string>result</string>
 	</dict>
